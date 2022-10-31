@@ -1,0 +1,43 @@
+.account-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6fa0cb;
+    border-radius: 5px;
+}
+
+#account-title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.account-details {
+
+    p {
+        margin: auto;
+    }
+}
+
+.account-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.listing-box {
+
+
+    .account-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .btn {
+            margin-right: 1em;
+        }
+    }
+
+    .account-card {
+        background-color: #6fa0cb;
+    }
+}

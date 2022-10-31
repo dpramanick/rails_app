@@ -1,0 +1,34 @@
+<%= simple_form_for @product do |f| %>
+
+	<% if product.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being created:</h2>
+
+        <ul>
+          <% product.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+	<%= f.input :name, label: "Item Name", required: true %>
+
+	<%= f.input :price, label: "Price in cents", required: true %>
+
+	<%= f.input :description, required: true %>
+
+
+	<%= f.input :category_id, as: :select, collection: @categories, prompt: 'Select Category', label: false, required: true %>
+
+	<%= f.input :condition_id, as: :select, collection: @conditions, prompt: 'Select Condition', label: false, required: true %>
+
+  <%= f.input :picture, as: "file", accept: "image/png,image/gif,image/jpeg,image/jpg", label: "Image of Item", required: true %>
+
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <%= f.button :submit, class: "btn btn-default" %>
+  
+<% end %>

@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body {
+    background-color: #c7d9e9;
+    height: 100%;
+}
+.navbar-toggle .icon-bar {
+    background-color: #052B54;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar .navbar-light {
+    background-color: #f8f8f8;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+}
+
+.container .form-container {
+    width: 60%;
+}
+
+.success {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-purchase {
+    margin-top: 1em;
+}
+
+.jumbo-fail {
+    margin-top: 10%;
+    background-color: #6fa0cb;
+}
+.pagination {
+    display: flex;
+    border-radius: 0.25rem;
+    justify-content: center;
+    
+  }
